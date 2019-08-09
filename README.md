@@ -1,2 +1,2 @@
 # Caj_Mobile
-L'application reseau social du groupe Coeur d'Amour de Jésus. Eglise Catholique Romaine
+L'application réseau social du groupe Coeur d'Amour de Jésus de l'Eglise Catholique Romaine

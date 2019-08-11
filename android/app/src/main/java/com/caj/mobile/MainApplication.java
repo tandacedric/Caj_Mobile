@@ -1,4 +1,4 @@
-package com.coeuramourjesus.coeuramourjesus;
+package com.caj.mobile;
 
 import android.support.multidex.MultiDexApplication;
 

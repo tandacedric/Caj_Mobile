@@ -1,8 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
-target 'CoeurAmourJesus' do
-  # Pods for CoeurAmourJesus
+target 'mobile' do
+  # Pods for mobile
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
@@ -25,13 +25,13 @@ target 'CoeurAmourJesus' do
 
 end
 
-target 'CoeurAmourJesus-tvOS' do
+target 'mobile-tvOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for CoeurAmourJesus-tvOS
+  # Pods for mobile-tvOS
 
-  target 'CoeurAmourJesus-tvOSTests' do
+  target 'mobile-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -1,40 +1,32 @@
 {
-  "project_info": {
-    "project_number": "993433822480",
-    "firebase_url": "https://coeur-d-amour-de-jesus.firebaseio.com",
-    "project_id": "coeur-d-amour-de-jesus",
-    "storage_bucket": "coeur-d-amour-de-jesus.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:993433822480:android:577235209e9cd5c2",
-        "android_client_info": {
-          "package_name": "com.mobile.caj"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "993433822480-4n43537onejv97mqhged77k2ddbun99u.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA68jAQO5XCkd1G5gM2O9bgLKXyZ2EPdL0"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "993433822480-4n43537onejv97mqhged77k2ddbun99u.apps.googleusercontent.com",
-              "client_type": 3
+    "project_info": {
+        "project_number": "993433822480",
+        "firebase_url": "https://coeur-d-amour-de-jesus.firebaseio.com",
+        "project_id": "coeur-d-amour-de-jesus",
+        "storage_bucket": "coeur-d-amour-de-jesus.appspot.com"
+    },
+    "client": [{
+        "client_info": {
+            "mobilesdk_app_id": "1:993433822480:android:577235209e9cd5c2",
+            "android_client_info": {
+                "package_name": "com.mobile.caj"
             }
-          ]
+        },
+        "oauth_client": [{
+            "client_id": "993433822480-4n43537onejv97mqhged77k2ddbun99u.apps.googleusercontent.com",
+            "client_type": 3
+        }],
+        "api_key": [{
+            "current_key": "AIzaSyA68jAQO5XCkd1G5gM2O9bgLKXyZ2EPdL0"
+        }],
+        "services": {
+            "appinvite_service": {
+                "other_platform_oauth_client": [{
+                    "client_id": "993433822480-4n43537onejv97mqhged77k2ddbun99u.apps.googleusercontent.com",
+                    "client_type": 3
+                }]
+            }
         }
-      }
-    }
-  ],
-  "configuration_version": "1"
+    }],
+    "configuration_version": "1"
 }

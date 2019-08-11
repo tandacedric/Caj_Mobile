@@ -33,16 +33,16 @@ const replaceInFile = (from, to) => {
       to: to
     };
     replace(options)
-      .then(changedFiles => {
-        if (changedFiles) {
-          console.log('[replaceInFile] Modified files: \n', changedFiles.join('\n'));
-        }
-        resolve();
-      })
-      .catch(error => {
-        console.error('[replaceInFile] Error occurred: ', error);
-        reject(error);
-      })
+    .then(changedFiles => {
+      if (changedFiles) {
+        console.log('[replaceInFile] Modified files: \n', changedFiles.join('\n'));
+      }
+      resolve();
+    })
+    .catch(error => {
+      console.error('[replaceInFile] Error occurred: ', error);
+      reject(error);
+    })
   })
 };
 
@@ -70,12 +70,12 @@ const updateProjectName = (name) => {
   console.log(`Updating project name: ${name}`);
   console.log('---------------------------------------');
   return replaceInFile(DEFAULT_PROJECT_NAME, name)
-    .then(() => {
-      console.log('---------------------------------------');
-      console.log('Finished updating project name');
-      console.log('---------------------------------------');
-      console.log();
-    });
+  .then(() => {
+    console.log('---------------------------------------');
+    console.log('Finished updating project name');
+    console.log('---------------------------------------');
+    console.log();
+  });
 };
 
 const updatePackageName = (packageName) => {
@@ -83,12 +83,12 @@ const updatePackageName = (packageName) => {
   console.log(`Updating package name: ${packageName}`);
   console.log('---------------------------------------');
   return replaceInFile(DEFAULT_PACKAGE_NAME, packageName)
-    .then(() => {
-      console.log('---------------------------------------');
-      console.log('Finished updating package name');
-      console.log('---------------------------------------');
-      console.log();
-    });
+  .then(() => {
+    console.log('---------------------------------------');
+    console.log('Finished updating package name');
+    console.log('---------------------------------------');
+    console.log();
+  });
   ;
 };
 
@@ -144,25 +144,25 @@ const run = async () => {
   projectName = projectName.replace(/ /g, '');
   companyName = companyName.replace(/ /g, '').toLowerCase();
 
-  const packageName = `com.${projectName.toLowerCase()}.${companyName}`;
+  const packageName = `com.${companyName}.${projectName.toLowerCase()}`;
   // Close the input
   rl.close();
 
   updateProjectName(projectName)
-    .then(() => updatePackageName(packageName))
-    .then(() => renameProjectFiles(projectName))
-    .then(() => renameCompanyFiles(companyName))
-    .then(() => {
-      console.log();
-      console.log('---------------------------------------------------------');
-      console.log('Set project parameters to:');
-      console.log('---------------------------------------------------------');
-      console.log('Project name: ', projectName);
-      console.log('Company name: ', companyName);
-      console.log('Package name: ', packageName);
-      console.log('---------------------------------------------------------');
-      console.log();
-    });
+  .then(() => updatePackageName(packageName))
+  .then(() => renameProjectFiles(projectName))
+  .then(() => renameCompanyFiles(companyName))
+  .then(() => {
+    console.log();
+    console.log('---------------------------------------------------------');
+    console.log('Set project parameters to:');
+    console.log('---------------------------------------------------------');
+    console.log('Project name: ', projectName);
+    console.log('Company name: ', companyName);
+    console.log('Package name: ', packageName);
+    console.log('---------------------------------------------------------');
+    console.log();
+  });
 };
 
 run().catch((error) => {

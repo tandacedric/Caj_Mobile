@@ -107,7 +107,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.coeuramourjesus.coeuramourjesus"
+        applicationId "com.caj.mobile"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
